@@ -103,6 +103,8 @@ color: #c5c5c5;
         border-radius: 20px;
         text-align: center;
         font-size: 20px;
+        border: 2px solid var(--main-color);
+        border-radius: 20px;
         position: absolute;
         right: 0;
         top: 30px;
@@ -223,7 +225,7 @@ margin-bottom: 40px;
 /* end landing */
 
 
-/* gblknk */
+/* start services  */
 
 .services {
     padding: 100px 0;
@@ -249,6 +251,32 @@ margin-bottom: 40px;
     font-size: 26px;
     color: #777;
 }
+
+
+.services .container .service {
+    text-align: center;
+    width: 300px;
+    margin: 10px;
+}
+
+specialTitle {
+    font-size: 60px;
+    font-weight: 900;
+    color: #c5c5c5;
+}
+
+.specialParagraph {
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.container {
+    padding: 20px;
+    margin-left: auto;
+}
+
+/* end services  */
 
 /* start stories */
 
@@ -278,4 +306,141 @@ margin: 10px;
 border-radius: 10px;
 }
 
+@media (max-width: 767px) {
+    .stories .container .contents .cards .card {
+        width: 320px;
+        margin-bottom: 30px;
+    }
+    
+}
+
+.stories .container .contents .cards .card .cardImg {
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    min-height: 100px;
+}
+
+.stories .container .contents .cards .card .cardImg img {
+    width: 100px;
+}
+
+.stories .container .contents .cards .card .cardDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    min-height: 100px;
+}
+
+.stories .container .contents .cards .card .cardDetails p {
+    margin-top: 10px;
+}
+
+.stories .container .contents .imgDiv {
+    display: none;
+    align-items: center;
+    position: relative;
+}
+
+.stories .container .contents .imgDiv img {
+    width: 300px;
+    z-index: 1;
+}
+
+.stories .container .contents .imgDiv::before {
+    content: "";
+    width: 100px;
+    height: 80%;
+    background-color: #c5c5c5;
+    position: absolute;
+    right: 20px;
+}
+
+@media (min-width: 1200px) {
+    .stories .container .contents .imgDiv {
+        display: flex;
+    }
+}
+
 /* end stories */
+
+
+/* start contact */
+
+
+.contact {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.contact .container {
+    text-align: center;
+}
+
+.contact .container .contents {
+    display: flex;
+    margin-top: 40px;
+    text-align: center;
+    align-items: center;
+}
+
+.contact .container .contents .details h3 {
+    font-size: 30px;
+    color: var(--main-color);
+}
+
+.contact .container .contents .details p {
+    font-size: 22px;
+    color: #777;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.contact .container .contents .form {
+    flex-grow: 1;
+    margin-left: 40px;
+}
+
+.contact .container .contents .form input, textarea {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: none;
+    outline-color: #fa694e;
+    background-color: #f6f3f3;
+    font-size: 25px;
+}
+
+.contact .container .contents .form textarea {
+    resize: none;
+}
+
+.contact .container .contents .form .firstRow {
+    display: flex;
+}
+
+.contact .container .contents .form .firstRow input:nth-child(2) {
+    margin-left: 10px;
+}
+
+.contact .container .contents .form button {
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 25px;
+    background-color: #fa694e;
+    color: white;
+}
+
+.contact .container .contents .form button:hover {
+    cursor: pointer;
+    background-color: darkred;
+}
+
+/* end contact */
