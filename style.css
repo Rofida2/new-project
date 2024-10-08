@@ -100,7 +100,6 @@ color: #c5c5c5;
 
     .header .container  .menuDiv .menuList {
         width: 200px;
-        text-shadow: 0px 0px 10px  rgb(116, 68, 6);
         background-color: rgb(255, 255, 255);
         list-style: none;
         padding: 10px;
@@ -127,7 +126,7 @@ color: #c5c5c5;
     .header .container .menuDiv .menuList li {
         padding: 10px;
         transition: 0.3s;
-        color: white;
+        color: burlywood;
     }
 
     .header .container .menuDiv .menuList a {
@@ -140,7 +139,7 @@ color: #c5c5c5;
     }
     
     .header .container .menuDiv .menuList .divider {
-        border-bottom: 1px solid rgba(253, 231, 188, 0.91);
+        border-bottom: 1px solid rgb(201, 159, 104);
     }
     
     .header .container .menuDiv {
@@ -154,6 +153,9 @@ color: #c5c5c5;
     
 /* end Header */
 
+.divider1 {
+    border-bottom: 10px solid rgb(201, 159, 104);
+}
 
 /* start landing */
 
@@ -209,6 +211,7 @@ margin-bottom: 40px;
     padding: 20px 40px;
     font-weight: 900;
     border: none;
+    font-family: "Dancing Script", cursive;
 }
 
 .landing .container .landingText button:hover {
@@ -233,6 +236,9 @@ margin-bottom: 40px;
 
 /* end landing */
 
+.divider1 {
+    border-bottom: 10px solid rgb(201, 159, 104);
+}
 
 /* start services  */
 
@@ -289,6 +295,10 @@ margin-bottom: 40px;
 
 /* end services  */
 
+.divider1 {
+    border-bottom: 10px solid rgb(201, 159, 104);
+}
+
 /* start stories */
 
 .stories {
@@ -300,11 +310,19 @@ padding-bottom: 100px;
 .stories .container p {
     text-align: center;
     color: burlywood;
+    font-size: 20px;
+}
+
+.stories .container .specialParagraph {
+    text-align: center;
+    color: burlywood;
+    font-size: 30px;
 }
 
 .stories .container h3 {
     text-align: center;
     color: rgb(211, 169, 114);
+    font-size: 30px;
 }
 
 
@@ -317,9 +335,9 @@ padding-bottom: 100px;
     flex-wrap: wrap;
 }
 
-.stories .container .contents  .cards .card{
+.stories .container .contents  .cards .cards{
 width: 230px;
-box-shadow: 0 0 10px gray;
+box-shadow: 0 0 10px rgb(255, 255, 255);
 margin: 10px;
 border-radius: 10px;
 }
@@ -333,29 +351,32 @@ border-radius: 10px;
 }
 
 .stories .container .contents .cards .card .cardImg {
-    background-color: #ddd;
+    background-color: burlywood;
+    border-radius: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
     min-height: 100px;
+    margin-right: 50px;
 }
 
 .stories .container .contents .cards .card .cardImg img {
-    width: 100px;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
 }
 
 .stories .container .contents .cards .card .cardDetails {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 10px;
     min-height: 100px;
+    margin-right: 50px;
 }
 
 .stories .container .contents .cards .card .cardDetails p {
-    margin-top: 10px;
+    margin-top: 0px;
 }
 
 .stories .container .contents .imgDiv {
@@ -365,18 +386,11 @@ border-radius: 10px;
 }
 
 .stories .container .contents .imgDiv img {
-    width: 300px;
+    width:300px;
     z-index: 1;
 }
 
-.stories .container .contents .imgDiv::before {
-    content: "";
-    width: 100px;
-    height: 80%;
-    background-color: #c5c5c5;
-    position: absolute;
-    right: 20px;
-}
+
 
 @media (min-width: 1200px) {
     .stories .container .contents .imgDiv {
@@ -384,8 +398,30 @@ border-radius: 10px;
     }
 }
 
+@media (min-width: 1200px) {
+    .stories .container .contents .cards .card .cardDetails {
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .stories .container .contents .cards .card .cardImg {
+        background-color: burlywood;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+}
+
 /* end stories */
 
+.divider1 {
+    border-bottom: 5px solid rgb(201, 159, 104);
+}
 
 /* start contact */
 
@@ -435,8 +471,13 @@ border-radius: 10px;
     margin-bottom: 20px;
     border-radius: 10px;
     background-color: #ffffff;
-    color: white;
+    color: rgb(211, 169, 114);
     font-size: 25px;
+    font-family: "Dancing Script", cursive;
+}
+
+::placeholder {
+    color: burlywood;
 }
 
 .contact .container .contents .form textarea {
@@ -459,6 +500,7 @@ border-radius: 10px;
     font-size: 25px;
     background-color: burlywood;
     color: white;
+    font-family: "Dancing Script", cursive;
 }
 
 .contact .container .contents .form button:hover {
